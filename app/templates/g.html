@@ -12,9 +12,34 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+    <style type = "text/css">
+      body {
+        background-color:#7b32a8;
+      }
+      
+      .one-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 550px;
+        align-items: stretch;
+      }
+      
+      .one{
+        text-align: center;
+        width: 30%;
+        height: 100%;
+        margin-left: 28px;
+        background-color: #f57e2f;
+      }
+    </style>
 	</head>
 	<body>
 		<!-- Your layout here -->
-
+    <div class = "one-box">
+      <div class = "one"></div>
+      <div class = "one"></div>
+      <div class = "one"></div>
+    </div>
 	</body>
 </html>
